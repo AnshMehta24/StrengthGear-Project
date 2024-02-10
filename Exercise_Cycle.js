@@ -69,7 +69,7 @@ function updateCartCount() {
 // }
 
 function addtoCart(productName, price, quantity) {
-    console.log("Adding to cart:", productName, price, quantity);
+ 
   
     const existingItem = cart.find(item => item.productName === productName);
  
@@ -101,5 +101,5 @@ function updateTotalAmount() {
     for (const item of cart) {
         totalAmount += item.price * item.quantity;
     }
-    console.log("Total Amount:", totalAmount); // Debugging statement
+   
 }
