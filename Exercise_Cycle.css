@@ -58,10 +58,6 @@ header {
     align-items: center;
 }
 
-/* nav a{
-    text-decoration: none;
-    color: black;
-} */
 .navbar {
     position: relative;
     display: grid;
@@ -87,17 +83,13 @@ header {
 
 main{
     position: absolute;
-    /* background-color: rgba(231, 230, 230, 0.89); */
     top: 10vh;
-    /* right: 1vw; */
     left: 10vw;
     width: 79vw;
     height: 200vh;
-    /* border: 3px solid red; */
 }
 
 #imageOfPdt{
-    /* float: left; */
     width: 40vw;
     height: 80vh;
     position: absolute;
@@ -105,8 +97,6 @@ main{
     bottom: 113vh;
     border-radius: 29px;
     background: transparent;
-    /* box-shadow:  7px 7px 14px #656161,
-                 -7px -7px 14px #ffffff; */
 } 
 
 .name_price{
@@ -135,8 +125,7 @@ main{
     left: 43.9vw;
     margin-top: 6vh;
     width: 30vw;
-    /* text-align: center; */
-    /* display: inline-block; */
+
 }
 
 .quantity-minus, .quantity_InputField, .quantity-plus{
@@ -152,6 +141,11 @@ main{
 .nameofProduct h1{
     position: relative;
     left: 1.7vw;
+}
+
+
+#treadmill_h1{
+    left: -6.4vw;
 }
 
 .main_buttons{
