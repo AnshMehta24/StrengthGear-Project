@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrengthGear/Your Cart</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Cart.css">
+
+</head>
+<body>
+    <header>
+        <h2 class="head">Free shipping on all available products.</h2>
+    </header>
+    <div class="nav">
+        <img src="/Assets/web_icon.png-PhotoRoom.png" alt="" class="logo">
+        <h1>Strength<span>Gear</span></h1>
+        <nav class="navbar">
+            <a href="#Home">Contact</a>
+            <a href="#about"><i class='bx bxs-cart'><span id="cartItemCount">0</span></i></a>
+            <a href="#about"><i class='bx bx-user'></i></a>
+        </nav>
+    </div>
+    <main>
+        <div class="heading">
+            <h1>Your Cart</h1>
+            <table id="cartTable">
+                <thead>
+                  <tr>
+                    <th>Product Name</th>
+                    <!-- <th>Image</th> -->
+                    <th>Quantity</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody id="cartItemsList"></tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="2">Total Amount:</td>
+                    <td id="totalAmount">$0</td>
+                  </tr>
+                </tfoot>
+              </table>
+              <div id="cartButtons"></div>
+        </div>
+
+    </main>
+   <!-- <div>
+      <div class="buttonsfor_shopping">
+        <button class="continue_shopping">Continue Shopping</button>
+        <button class="place_order">Place Oreder</button>
+      </div>
+    </div> -->
+
+    
+</body>
+
+
+<script>
+  function updateCartCount() {
+      const cartItemCount = document.getElementById('cartItemCount');
+      const storedCart = localStorage.getItem('cart');
+      let cart = storedCart ? JSON.parse(storedCart) : [];
+      const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+      cartItemCount.textContent = totalCount;
+  }
+
+  function calculateTotalAmount() {
+      return cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    cart = JSON.parse(localStorage.getItem('cart')) || []; // Get cart from local storage or create an empty array
+  const cartItemsList = document.getElementById("cartItemsList");
+  const totalAmountElement = document.getElementById("totalAmount");
+
+  updateCartCount();
+
+  cart.forEach((item) => {
+    const row = createCartItemRow(item); // Create row using a helper function
+    cartItemsList.appendChild(row);
+  });
+
+  totalAmountElement.textContent = `$${calculateTotalAmount()}`;
+  function createCartItemRow(item) {
+  const row = document.createElement("tr");
+  row.innerHTML = `
+    <td>${item.productName}</td>
+
+<td>${item.quantity}</td>
+<td>${item.price * item.quantity}</td>
+`;
+return row;
+}
+      // const cartItemsList = document.getElementById("cartItemsList");
+      // const totalAmountElement = document.getElementById("totalAmount");
+      // const cartButtons = document.getElementById("cartButtons");
+
+      // updateCartCount();
+
+      // const storedCart = localStorage.getItem('cart');
+      // let cart = storedCart ? JSON.parse(storedCart) : [];
+      // if (cart.length > 0) {
+      //     cart.forEach((item) => {
+      //         const row = document.createElement("tr");
+      //         row.innerHTML = `
+      //             <td>${item.productName}</td>
+      //             <td><img src="Exercise Cycle 01.png" alt="${item.productName}"></td>
+      //             <td>${item.quantity}</td>
+      //             <td>$${item.price * item.quantity}</td>
+      //         `;
+      //         cartItemsList.appendChild(row);
+      //     });
+
+      //     totalAmountElement.textContent = `$${calculateTotalAmount()}`;
+      // }
+
+      const checkoutButton = document.createElement("button");
+      checkoutButton.textContent = "Continue Shopping";
+      checkoutButton.style.fontSize = "22px";
+      checkoutButton.style.backgroundColor = "black";
+      checkoutButton.style.color = "white";
+      checkoutButton.style.marginRight = "3vh";
+
+      cartButtons.appendChild(checkoutButton);
+
+      checkoutButton.addEventListener('click', () => {
+          window.location.href = 'gym_equipments.html';
+      });
+
+      const Place_Order = document.createElement("button");
+      Place_Order.textContent = "Place Order";
+      Place_Order.style.fontSize = "22px";
+      Place_Order.style.backgroundColor = "black";
+      Place_Order.style.color = "white";
+      Place_Order.style.marginRight = "3vh";
+
+      cartButtons.appendChild(Place_Order);
+  });
+</script>
+
+
+<!-- <script src="common.js"></script> -->
+<!-- <script>
+
+
+  // function updateCartCount() {
+  //   const cartItemCount = document.getElementById('cartItemCount');
+  //   const storedCart = localStorage.getItem('cart');
+  //   cart = storedCart ? JSON.parse(storedCart) : [];
+  //   const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+  //   cartItemCount.textContent = totalCount;
+  // }
+  function updateCartCount() {
+    const cartItemCount = document.getElementById('cartItemCount');
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+    cartItemCount.textContent = totalCount;
+}
+
+  function calculateTotalAmount() {
+    return cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const cartItemsList = document.getElementById("cartItemsList");
+    const totalAmountElement = document.getElementById("totalAmount");
+    const cartButtons = document.getElementById("cartButtons");
+
+    updateCartCount();
+
+    const storedCart = localStorage.getItem('cart');
+    if (storedCart) {
+      cart = JSON.parse(storedCart);
+
+      cart.forEach((item) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${item.productName}</td>
+          <td><img src="/Assets/Exercise Cycle 01.png" alt="${item.productName}"></td>
+          <td>${item.quantity}</td>
+          <td>$${item.price * item.quantity}</td>
+        `;
+        cartItemsList.appendChild(row);
+      });
+
+      totalAmountElement.textContent = `$${calculateTotalAmount()}`;
+
+    }
+
+    const checkoutButton = document.createElement("button");
+    checkoutButton.textContent = "Continue Shopping";
+    checkoutButton.style.fontSize = "22px";
+    checkoutButton.style.backgroundColor = "black";
+    checkoutButton.style.color = "white";
+    checkoutButton.style.marginRight = "3vh";
+    cartButtons.appendChild(checkoutButton);
+
+    checkoutButton.addEventListener('click', () => {
+      window.location.href = 'gym_equipments.html';
+    });
+
+    const placeOrderButton = document.createElement("button");
+    placeOrderButton.textContent = "Place Order";
+    placeOrderButton.style.fontSize = "22px";
+    placeOrderButton.style.backgroundColor = "black";
+    placeOrderButton.style.color = "white";
+    placeOrderButton.style.marginRight = "3vh";
+    cartButtons.appendChild(placeOrderButton);
+
+    placeOrderButton.addEventListener('click', () => {
+      // Add functionality to place order
+      alert("Order placed successfully!");
+      localStorage.removeItem('cart');
+      updateCartCount(); // Update cart count after order is placed
+    });
+  });
+</script> -->
+
+
+<!-- <script>
+  let cart = [];
+  let totalAmount = 0;
+
+  function addToCart(productName, price) {
+  const existingItem = cart.find(item => item.productName === productName);
+
+  if (existingItem) {
+      existingItem.quantity++;
+  } else {
+      cart.push({ productName, price, quantity: 1 });
+  }
+
+  updateCartCount();
+  calculateTotalAmount();
+  }
+
+  function updateCartCount() {
+  const cartItemCount = document.getElementById("cartItemCount");
+  cartItemCount.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
+  }
+
+  function showCart() {
+  const cartPage = document.getElementById("cartPage");
+  const cartItemsList = document.getElementById("cartItemsList");
+  const totalAmountElement = document.getElementById("totalAmount");
+
+  cartItemsList.innerHTML = "";
+  cart.forEach((item) => {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+      <td>${item.productName}</td>
+      <td><img src="product_image_placeholder.jpg" alt="${item.productName}"></td>
+      <td>${item.quantity}</td>
+      <td>$${item.price * item.quantity}</td>
+      `;
+      cartItemsList.appendChild(row);
+  });
+
+  totalAmountElement.textContent = `$${totalAmount}`;
+
+  cartPage.style.display = "block";
+  }
+
+  function calculateTotalAmount() {
+  totalAmount = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  }
+</script> -->
+</html>

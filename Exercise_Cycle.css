@@ -1,0 +1,294 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.head {
+    z-index: 1;
+    /* background-color: black; */
+    position: relative;
+    margin: auto;
+    top: 1px;
+    font-size: 15px;
+    }
+
+header {
+    position: relative;
+    background-color: black;
+    color: white;
+    bottom: 8px;
+    width: 98.7vw;
+    right: 8px;
+    height: 3vh;
+    text-align: center;
+    z-index: 1;
+}
+
+.logo {
+    z-index: 1;
+    position: relative;
+    right: 110px;
+    width: 10vw;
+    height: 8vh;
+    top: -5px;
+}
+
+.nav h1 {
+    font-family: cursive;
+    position: relative;
+    right: 490px;
+    top: -3px;
+}
+
+.nav h1 span {
+    color: gray;
+}
+
+.nav {
+    z-index: 3;
+    border-bottom: 2px solid gray;
+    position: absolute;
+    top: 22px;
+    left: -56px;
+    width: 83.6%;
+    height: 69px;
+    padding: 0px 10%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* nav a{
+    text-decoration: none;
+    color: black;
+} */
+.navbar {
+    position: relative;
+    display: grid;
+    background: transparent;
+    grid-template-columns: 121px 78px 62px;
+    grid-template-rows: 32px;
+    /* top: -13px; */
+    justify-content: end;
+    align-items: center;
+    /* right: 16px; */
+    left: 100px;
+}
+
+.navbar a {
+    background: transparent;
+    display: inline-block;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+main{
+    position: absolute;
+    /* background-color: rgba(231, 230, 230, 0.89); */
+    top: 10vh;
+    /* right: 1vw; */
+    left: 10vw;
+    width: 79vw;
+    height: 200vh;
+    /* border: 3px solid red; */
+}
+
+#imageOfPdt{
+    /* float: left; */
+    width: 40vw;
+    height: 80vh;
+    position: absolute;
+    /* left: 10vw; */
+    bottom: 113vh;
+    border-radius: 29px;
+    background: transparent;
+    /* box-shadow:  7px 7px 14px #656161,
+                 -7px -7px 14px #ffffff; */
+} 
+
+.name_price{
+    display: block;
+    position: relative;
+    text-align: end;
+    right: 15vw;
+    top: 2vh;
+    font-size: 25px;
+   }
+
+.priceofProduct{
+    position: relative;
+   font-size: 15px;
+   font-weight: 400;
+   right: 9.7vw;
+}
+
+.priceofProduct span{
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
+.qunatityControls,.main_buttons{
+    position: relative;
+    left: 43.9vw;
+    margin-top: 6vh;
+    width: 30vw;
+    /* text-align: center; */
+    /* display: inline-block; */
+}
+
+.quantity-minus, .quantity_InputField, .quantity-plus{
+    font-size: 3vh;
+}
+
+.quantity_InputField{
+    width: 4vw;
+
+    text-align: center;
+}
+
+.nameofProduct h1{
+    position: relative;
+    left: 1.7vw;
+}
+
+.main_buttons{
+    margin-top: 6vh ;
+}
+
+.addToCart, .buyNow{
+    width: 30vw;
+    height: 7vh;
+    font-size: 25px;
+}
+
+.addToCart{
+    border: 2px solid black;
+}
+
+.buyNow{
+    border: 2px solid black;
+    margin-top: 2vh;
+    color: white;
+    background-color: black;
+}
+
+.description{
+    margin-top: 6vh;
+    width: 37vw;
+    height: 30vh;
+}
+.description p, .aboutItem{
+        position: relative;
+    left: 43.9vw;
+    font-size: 25px;
+}
+.aboutItem li{
+    font-size: 22px;
+    position: relative;
+    right: 2vw;
+    font-weight: normal;
+    /* margin-top: 6vh; */
+}
+.aboutItem{
+    width: 40vw;
+    /* justify-content:; */
+}
+.aboutItem h1{
+    font-size: 35px;
+    font-weight: normal;
+}
+
+hr{
+    position: relative;
+    z-index: 12;
+    margin-top: 6vh;
+    left:43.9vw;
+}
+
+.shipping{
+    position: relative;
+/* left: 10vw; */
+margin-top: 10vh;
+    width: 35vw;
+    height: 50vh;
+}
+
+.info1 h1, .info2 h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+.info1 p, .info2 p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.info2 {
+    margin-top: 17vh;
+}
+
+.footer{
+    position: absolute;
+    top:160vh ;
+    left: 10vw;
+}
+
+.footer hr{
+    position: relative;
+    z-index: 2;
+    top: 10vh;
+    left: 0vw;
+}
+footer{
+    margin-top: -5vh;
+}
+.upperFooter {
+    top: 20vh;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    /* bottom: vh; */
+    gap: 10vw;
+}
+
+.upperFooter p {
+    width: 15vw;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Foot01 {
+    position: relative;
+    right: 30px;
+}
+
+.upperFooter h3 {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.upperFooter {
+    position: relative;
+    justify-content: center;
+}
+
+.upperFooter .List {
+    list-style-type: none;
+}
+
+.upperFooter .List li {
+    /* opacity: var(--opacity); */
+    position: relative;
+    right: 2.5vw;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.lasticons {
+    font-size: 30px;
+    /* width: 20vw; */
+    /* margin-right: 10px; */
+}

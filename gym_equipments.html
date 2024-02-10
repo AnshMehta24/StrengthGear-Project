@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrengthGear/Gym Equipments</title>
+    <link rel="stylesheet" href="gym_equipments.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+</head>
+
+<body>
+    <header>
+        <h2 class="head">Free shipping on all available products.</h2>
+    </header>
+    <div class="nav">
+        <img src="/Assets/web_icon.png-PhotoRoom.png" alt="" class="logo">
+        <h1>Strength<span>Gear</span></h1>
+        <nav class="navbar">
+            <a href="#Home">Contact</a>
+            <a href="Cart.html"><i class='bx bxs-cart'><span id="cartItemCount">0</span></i></a>
+            <a href="#about"><i class='bx bx-user'></i></a>
+        </nav>
+    </div>
+    <!-- <section class="bodyofGymEq"> -->
+    <main class="main">
+        <h1>GYM Equipments</h1>
+        <div class="CategoryPage">
+            <section class="CategoryPage_Filter">
+                <div class="CategoryPage_Filter_01">
+                    <p>Filter : </p>
+                    <div class="CategoryPage_Filter_Options">
+                        <p>Price</p>
+                        <i class='bx bx-chevron-down' id="flex_icon01"></i>
+                        <div class="CategoryPage_Filter_PopUp">
+                            <div class="CategoryPage_Filter_HighestPrice_Reset">
+                                <p class="CategoryPage_Filter_HighestPrice">The Highest Price Is 15000$</p>
+
+                                <p class="CategoryPage_Filter_Reset">Reset</p>
+                            </div>
+                            <div class="CategoryPage_Filter_InputValues">
+                                <label for="Min_Price" id="min_price_from">From&nbsp;:&nbsp;$</label>
+                                <input type="number" name="min" id="min_price">
+                                <label for="Max_Price" id="max_price_from">To&nbsp;:&nbsp;$</label>
+                                <input type="number" name="max" id="max_price">
+
+                                <button id="btn_Check">Check</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="CategoryPage_SortBy">
+                <label for="sort">Sort By : </label>
+                <select name="sort" id="sort">
+                    <option value="featured">Featured</option>
+                    <option value="Hightolow">Price:High to Low</option>
+                    <option value="Lowtohigh">Price:Low to High</option>
+                </select>
+            </section>
+        </div>
+
+        <!-- </div> -->
+
+        <div class="gym_equipments_products">
+            <div class="gym_equipment01">
+                <div class="gym_equipmmentImg01" data-price="146.80">
+                    <a href="Exercise_Cycle.html"><img src="/Assets/Exercise Cycle 01.png" alt=""></a>
+                </div>
+                <div class="gym_equipmentName01">
+                    <a href="Exercise_Cycle.html" id="p1">Exercise Cycle</a>
+                </div>
+                <div class="gym_equipmentPrice01">
+                    <h1>146.80$ <span>170$</span></h1>
+                </div>
+            </div>
+            <div class="gym_equipment02">
+                <div class="gym_equipmmentImg02" data-price="204.50">
+                    <a href="#"><img src="/Assets/Treadmill01.png" alt=""></a>
+
+                </div>
+                <div class="gym_equipmentName02">
+                    <a href="#" id="p2">Treadmill</a>
+                </div>
+                <div class="gym_equipmentPrice02">
+                    <h1>204.50$ <span>350$</span></h1>
+                </div>
+            </div>
+            <div class="gym_equipment03">
+                <div class="gym_equipmmentImg03" data-price="324.50">
+                    <a href="#"><img src="/Assets/Adjustable Weights01.png" alt=""></a>
+                </div>
+                <div class="gym_equipmentName03">
+                    <a href="#" id="p3">Adjustable Dumbell</a>
+                </div>
+                <div class="gym_equipmentPrice03">
+                    <h1>324.50$ <span>399$</span></h1>
+                </div>
+            </div>
+            <div class="gym_equipment04">
+                <div class="gym_equipmmentImg04" data-price="43.30">
+                    <a href="#"><img src="/Assets/Weight Bench 01.png" alt=""></a>
+                </div>
+                <div class="gym_equipmentName04">
+                    <a href="#" id="p4">Weight Bench</a>
+                </div>
+                <div class="gym_equipmentPrice04">
+                    <h1>43.30$ <span>144.35$</span></h1>
+                </div>
+            </div>
+            <div class="gym_equipment05">
+                <div class="gym_equipmmentImg05" data-price="3.01">
+                    <a href="#"><img src="/Assets/SLOVIC Resistance Band 01.png" alt=""></a>
+                </div>
+                <div class="gym_equipmentName05">
+                    <a href="#" id="p5">Resistance Band</a>
+                </div>
+                <div class="gym_equipmentPrice05">
+                    <h1>3.01$ <span>10$</span></h1>
+                </div>
+            </div>
+            <div class="gym_equipment06">
+                <div class="gym_equipmmentImg06" data-price="46.8">
+                    <a href="#"><img src="/Assets/Weighted Vest 01.png" alt=""></a>
+                </div>
+                <div class="gym_equipmentName06">
+                    <a href="#" id="p6">Weighted Vest</a>
+                </div>
+                <div class="gym_equipmentPrice06">
+                    <h1>46.8$ <span>66$</span></h1>
+                </div>
+            </div>
+            <div class="gym_equipment07">
+                <div class="gym_equipmmentImg07" data-price="10">
+                    <a href="#"><img src="/Assets/YOGA Mat 01.png" alt=""></a>
+                </div>
+                <div class="gym_equipmentName07">
+                    <a href="#" id="p7">Yoga Mat</a>
+                </div>
+                <div class="gym_equipmentPrice07">
+                    <h1>10$ <span>19.19$</span></h1>
+                </div>
+            </div>
+            <div class="gym_equipment08">
+                <div class="gym_equipmmentImg08" data-price="6">
+                    <a href="#"><img src="/Assets/4KG Kettlebells for Weightlifting.png" alt=""></a>
+                </div>
+                <div class="gym_equipmentName08">
+                    <a href="#" id="p8">4KG Kettlebells for Weightlifting</a>
+                </div>
+                <div class="gym_equipmentPrice08">
+                    <h1>6$ <span>11$</span></h1>
+                </div>
+            </div>
+            <div class="gym_equipment09">
+                <div class="gym_equipmmentImg09" data-price="20">
+                    <a href="#"><img src="/Assets/5KG Dumbell 01.png" alt=""></a>
+                </div>
+                <div class="gym_equipmentName09">
+                    <a href="#" id="p9">5KG Dumbell</a>
+                </div>
+                <div class="gym_equipmentPrice09">
+                    <h1>20$ <span>36$</span></h1>
+                </div>
+            </div>
+            <div class="gym_equipment10">
+                <div class="gym_equipmmentImg10" data-price="4.57">
+                    <a href="#"><img src="/Assets/AB Roller 01.png" alt=""></a>
+                </div>
+                <div class="gym_equipmentName10">
+                    <a href="#" id="p10">AB Roller</a>
+                </div>
+                <div class="gym_equipmentPrice10">
+                    <h1>4.57$ <span>10$</span></h1>
+                </div>
+            </div>
+            <div class="gym_equipment11">
+                <div class="gym_equipmmentImg11" data-price="3.1">
+                    <a href="#"><img src="/Assets/Hand Gripper 01.png" alt=""></a>
+                </div>
+                <div class="gym_equipmentName11">
+                    <a href="#" id="p11">Hand Gripper</a>
+                </div>
+                <div class="gym_equipmentPrice11">
+                    <h1>3.1$ <span>7.22$</span></h1>
+                </div>
+            </div>
+            <div class="gym_equipment12">
+                <div class="gym_equipmmentImg12" data-price="2.75">
+                    <a href="#"><img src="/Assets/Wrist Wrap_Strap.png" alt=""></a>
+                </div>
+                <div class="gym_equipmentName12">
+                    <a href="#" id="p12">Wrist Wrap/Strap</a>
+                </div>
+                <div class="gym_equipmentPrice12">
+                    <h1>2.75$ <span>4$</span></h1>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    </section>
+    <section class="footer">
+        <hr class="hr">
+        <footer>
+            <div class="upperFooter">
+                <div class="Foot01">
+                    <h3 class="footerHeading">StrengthGear</h3>
+                    <p>Stay connected with StrengthGear by following us on social media. We offer fitness tips, workout
+                        inspiration, and exclusive discounts.</p>
+                    <div class="lasticons">
+                        <i class='bx bxl-instagram'></i>&nbsp;
+                        <i class='bx bxl-facebook-circle'></i>&nbsp;
+                        <i class='bx bxl-twitter'></i>&nbsp;
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footerHeading">Quick Links</h3>
+                    <ul class="List">
+                        <li>Gym Equipments</li>
+                        <li>Calisthenics Equipments</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footerHeading">Info</h3>
+                    <ul class="List">
+                        <li>About Us</li>
+                        <li>Shopping Policy</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footerHeading">Need Help?</h3>
+                    <ul class="List">
+                        <li>Contact Us</li>
+                        <li>My Account</li>
+                        <li>Cart</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+<!-- <script src="../common.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+<script src="gym_equipments.js"></script>
+
+
+
+</html>

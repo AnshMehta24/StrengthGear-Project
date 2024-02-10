@@ -1,0 +1,387 @@
+body{
+    height: 205vh;
+}
+
+.head {
+    z-index: 1;
+    /* background-color: black; */
+    position: relative;
+    margin: auto;
+    top: 1px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    color: white;
+    bottom: 8px;
+    width: 98.7vw;
+    right: 8px;
+    height: 3vh;
+    text-align: center;
+    z-index: 1;
+}
+
+.logo {
+    z-index: 1;
+    position: relative;
+    right: 110px;
+    width: 10vw;
+    height: 8vh;
+    top: -5px;
+}
+
+.nav h1 {
+    font-family: cursive;
+    position: relative;
+    right: 490px;
+    top: -3px;
+}
+
+.nav h1 span {
+    color: gray;
+}
+
+.nav {
+    z-index: 3;
+    border-bottom: 2px solid gray;
+    position: absolute;
+    top: 22px;
+    left: -56px;
+    width: 83.7%;
+    height: 69px;
+    padding: 0px 10%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* nav a{
+    text-decoration: none;
+    color: black;
+} */
+.navbar {
+    position: relative;
+    display: grid;
+    background: transparent;
+    grid-template-columns: 121px 78px 62px;
+    grid-template-rows: 32px;
+    /* top: -13px; */
+    justify-content: end;
+    align-items: center;
+    /* right: 16px; */
+    left: 100px;
+}
+
+.navbar a {
+    background: transparent;
+    display: inline-block;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+
+
+.main {
+    width: 99.4vw;
+    top: 4vh;
+    background-color: white;
+    position: relative;
+    bottom: 80vh;
+    color: black;
+    z-index: 2;
+    left: -1vw;
+    height: 220vh;
+
+}
+
+.main h1 {
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    /* bottom: -3vh; */
+    left: 2vw;
+    top: 2vh;
+    width: 30vw;
+}
+
+.CategoryPage_Filter_Options {
+    display: flex;
+    /* flex-direction: column; */
+    /* width: 20vw; */
+    position: relative;
+    gap: 0.3rem;
+}
+
+#flex_icon01 {
+    position: relative;
+    top: 3.2vh;
+    left: 1vw;
+}
+
+.CategoryPage_Filter_01 {
+    display: flex;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    left: 2.5vw;
+    bottom: 3.5vh;
+    width: 20vw;
+}
+
+.CategoryPage_Filter_Options p {
+    position: relative;
+    left: 1vw;
+}
+
+.CategoryPage_Filter_PopUp {
+    display: none;
+   }
+
+.CategoryPage_Filter_HighestPrice_Reset {
+    display: flex;
+    gap: 15rem;
+    position: relative;
+    bottom: 15px;
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#min_price,
+#max_price {
+    position: relative;
+    width: 15vw;
+    height: 4vh;
+}
+
+#min_price_from,
+#max_price_from {
+    /* position: relat  ive; */
+    /* width: 10vw; */
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.CategoryPage_Filter_InputValues {
+    position: relative;
+    display: flex;
+    bottom: 10px;
+    width: 35vw;
+    gap: 15px;
+}
+
+.CategoryPage_Filter_InputValues button {
+    position: relative;
+    /* top: x; */
+    top: 8vh;
+    right: 51%;
+    /* left: 38%; */
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* padding: 10px; */
+    width: 7vw;
+    margin-bottom: 10px;
+}
+
+.CategoryPage_Filter_Options:hover .CategoryPage_Filter_PopUp {
+    display: block;
+    position: absolute;
+    top: 75%;
+    background-color:white;
+    border: 1px solid black;
+    padding: 10px;
+    height: 20vh;
+    right: -27vw;
+    /* left: 2vw; */
+    z-index: 99;
+;
+}
+
+.CategoryPage {
+    display: flex;
+    gap: 60vw;
+}
+
+.CategoryPage_SortBy {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    left: 1.5vw;
+    bottom: 1vh;
+    width: 14vw;
+}
+
+#sort {
+    position: relative;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+.gym_equipments_products{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    /* column-gap: 2vw; */
+    position: relative;
+    left: 5vw;
+    width: 90%;
+    grid-gap: 2rem;
+    row-gap: 12vh;
+}
+
+.gym_equipments_products a img{
+    width: 20vw;
+    height: 40vh;
+    position: relative;
+    top: 30px;
+    left: 15px;
+    border-radius: 43px;
+    background: #e0e0e0;
+    box-shadow: 7px 7px 26px #c5c5c5,
+        -7px -7px 26px #fbfbfb;   
+}
+
+.gym_equipmentName01 a, .gym_equipmentName02 a, .gym_equipmentName03 a, .gym_equipmentName04 a, .gym_equipmentName05 a, .gym_equipmentName06 a, .gym_equipmentName07 a, .gym_equipmentName08 a, .gym_equipmentName09 a, .gym_equipmentName10 a, .gym_equipmentName11 a, .gym_equipmentName12 a{
+    position: relative;
+    left: 7.5vw;
+    top: 8vh;
+    width: 6.5vw;
+    color: black;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: black; */
+}
+
+.gym_equipmentPrice01 h1, .gym_equipmentPrice02 h1, .gym_equipmentPrice03 h1, .gym_equipmentPrice04 h1, .gym_equipmentPrice05 h1, .gym_equipmentPrice06 h1, .gym_equipmentPrice07 h1, .gym_equipmentPrice08 h1, .gym_equipmentPrice09 h1, .gym_equipmentPrice10 h1, .gym_equipmentPrice11 h1, .gym_equipmentPrice12 h1{
+    position: relative;
+    top: 8vh;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 6vw;
+    width: 12vw;
+}
+
+.gym_equipmentPrice04 h1{
+    left: 5vw;
+    width: 12vw;
+}
+.gym_equipmentPrice05 h1{
+    left: 8vw;
+}
+.gym_equipmentPrice06 h1{
+    left: 7.5vw;
+}
+.gym_equipmentPrice08 h1{
+    left: 9vw;
+    width: 7vw;
+}
+.gym_equipmentPrice09 h1{
+    left: 8vw;
+}
+.gym_equipmentPrice11 h1{
+    left: 7.5vw;
+}
+.gym_equipmentPrice12 h1{
+    left: 8vw;
+    width: 10vw;
+}
+
+.gym_equipment01, .gym_equipment02, .gym_equipment03, .gym_equipment04, .gym_equipment05, .gym_equipment06, .gym_equipment07, .gym_equipment08, .gym_equipment09, .gym_equipment10, .gym_equipment11, .gym_equipment12{
+    display: block;
+}
+
+.gym_equipmentName02 a{
+    left: 8.5vw;
+}
+
+.gym_equipmentName03 a{
+   left: 5.7vw;
+}
+
+.gym_equipmentName08 a{
+    left: 3.5vw;
+}
+.gym_equipmentName12 a{
+    left: 7vw;
+}
+
+.footer{
+    background-color: white;
+    z-index: -1;
+    position: relative;
+    /* top: 2vh; */
+    left: -1vw;
+    width: 99.4vw;
+    bottom:6vh;
+    height: 60vh;
+}
+.hr{
+        position: relative;
+        /* bottom: 2vh; */
+        /* top: 8vh; */
+        width: 70vw;
+        z-index:1;
+        color: black;
+        top: 12vh;
+    }
+
+.upperFooter {
+    top: 20vh;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    /* bottom: vh; */
+    gap: 10vw;
+}
+
+.upperFooter p {
+    width: 15vw;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Foot01 {
+    position: relative;
+    right: 30px;
+}
+
+.upperFooter h3 {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.upperFooter {
+    position: relative;
+    justify-content: center;
+}
+
+.upperFooter .List {
+    list-style-type: none;
+}
+
+.upperFooter .List li {
+    /* opacity: var(--opacity); */
+    position: relative;
+    right: 2.5vw;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.lasticons {
+    font-size: 30px;
+    /* width: 20vw; */
+    /* margin-right: 10px; */
+}

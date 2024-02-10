@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart Example</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .product {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .cart-icon {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .cart-page {
+      display: none;
+      padding: 20px;
+    }
+
+    #cartTable {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    #cartTable th, #cartTable td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    #cartTable img {
+      max-width: 50px;
+      max-height: 50px;
+    }
+
+    #totalAmount {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Shopping Cart Example</h1>
+  </header>
+
+  <div class="product">
+    <h2>Product 1</h2>
+    <img src="product1.jpg" alt="Product 1 Image">
+    <p>Price: $10</p>
+    <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <h2>Product 2</h2>
+    <img src="product2.jpg" alt="Product 2 Image">
+    <p>Price: $20</p>
+    <button onclick="addToCart('Product 2', 20)">Add to Cart</button>
+  </div>
+
+  <div class="cart-icon" onclick="showCart()">Cart <span id="cartItemCount">0</span></div>
+
+  <div class="cart-page" id="cartPage">
+    <h2>Your Cart</h2>
+    <table id="cartTable">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Image</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody id="cartItemsList"></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total Amount:</td>
+          <td id="totalAmount">$0</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <script>
+        let cart = [];
+        let totalAmount = 0;
+
+        function addToCart(productName, price) {
+        const existingItem = cart.find(item => item.productName === productName);
+
+        if (existingItem) {
+            existingItem.quantity++;
+        } else {
+            cart.push({ productName, price, quantity: 1 });
+        }
+
+        updateCartCount();
+        calculateTotalAmount();
+        }
+
+        function updateCartCount() {
+        const cartItemCount = document.getElementById("cartItemCount");
+        cartItemCount.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
+        }
+
+        function showCart() {
+        const cartPage = document.getElementById("cartPage");
+        const cartItemsList = document.getElementById("cartItemsList");
+        const totalAmountElement = document.getElementById("totalAmount");
+
+        cartItemsList.innerHTML = "";
+        cart.forEach((item) => {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+            <td>${item.productName}</td>
+            <td><img src="product_image_placeholder.jpg" alt="${item.productName}"></td>
+            <td>${item.quantity}</td>
+            <td>$${item.price * item.quantity}</td>
+            `;
+            cartItemsList.appendChild(row);
+        });
+
+        totalAmountElement.textContent = `$${totalAmount}`;
+
+        cartPage.style.display = "block";
+        }
+
+        function calculateTotalAmount() {
+        totalAmount = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+        }
+  </script>
+
+</body>
+</html>
