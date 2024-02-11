@@ -70,3 +70,69 @@ Shery.mouseFollower({
 
 
 // ********************************** code for gym equipment ***********************************
+
+const Products={
+    "product1" :{
+        productName : "Exercise Cycle",
+        quantity : 1,
+        price: 146
+    },
+    "product2" :{
+        productName : "Treadmill",
+        // quantity : 1,
+        price: 204
+    },
+    product3 :{
+        productName : "Adjustable Dumbell",
+        // quantity : 1,
+        price: 324
+    },
+    product4 :{
+        productName : "Weight Bench",
+        // "quantity" : 1,
+        price: 43
+    },
+    product5 :{
+        productName : "Resistance Band",
+        // "quantity" : 1,
+        price:3
+    },
+    product6 :{
+        productName : "Weighted Vest",
+        // "quantity" : 1,
+        price: 46
+    },
+product7 :{
+        productName : "Yoga Mat",
+        // "quantity" : 1,
+        price: 10
+    },
+    product8 :{
+        productName : "4KG Kettlebells for Weightlifting",
+        // "quantity" : 1,
+        price: 6
+    },
+    product9 :{
+        productName : "5KG Dumbell",
+        // quantity : 1,
+        price: 20
+    },
+    product10 :{
+        productName : "AB Roller",
+        // "quantity" : 1,
+        price: 4
+    },
+    product11 :{
+        productName : "Hand Gripper",
+        // "quantity" : 1,
+        price:3
+    },
+    product12 :{
+        productName : "Wrist Wrap/Strap",
+        // "quantity" : 1,
+        price: 12
+    },
+}
+const productString = JSON.stringify(Products);
+localStorage.setItem("Products", productString);
+const products = JSON.parse(productString);

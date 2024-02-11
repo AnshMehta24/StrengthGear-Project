@@ -2,11 +2,14 @@ let input = document.querySelector('#input_field')
 let cart = []
 let totalAmount = 0;
 let addCart = document.querySelector('.addToCart')
-
+const Products= JSON.parse(window.localStorage.getItem("Products"));
+console.log(Products);
 document.addEventListener('DOMContentLoaded', function () {
     let plusBtn = document.querySelector('.quantity-plus')
     let minusBtn = document.querySelector('.quantity-minus')
-
+    const storedCart = localStorage.getItem('cart');
+    cart = storedCart ? JSON.parse(storedCart) : [];
+    updateCartCount();
     plusBtn.addEventListener('click', function () {
         increment();
     })
@@ -15,14 +18,14 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     addCart.addEventListener('click', () => {
-        const productName = "Treadmill";
-        const price = 204.50;
-        const quantity = parseInt(input.value);
-
-        addtoCart(productName, price, quantity);
+       
+            const product = Products.product2;
+            const quantity = parseInt(input.value);
+            addtoCart(product.productName, product.price, quantity);
+       
+    
+      });
       
-    });
-
 
 })
 
@@ -53,26 +56,25 @@ function updateCartCount() {
 
 
 function addtoCart(productName, price, quantity) {
-
-
+ 
+  
     const existingItem = cart.find(item => item.productName === productName);
-
-    if (existingItem) {
-        existingItem.quantity += quantity;
+ 
+  if (existingItem) {
+      existingItem.quantity += quantity;
     } else {
+        // cart.push(Products.product1);
         cart.push({ productName, price, quantity });
-
     }
-
-    localStorage.setItem('cart', JSON.stringify(cart)); // Store cart in local storage
+   localStorage.setItem('cart', JSON.stringify(cart)); // Store cart in local storage
     updateCartCount();
     updateTotalAmount();
-}
+  }
 
 function updateTotalAmount() {
     let totalAmount = 0;
     for (const item of cart) {
         totalAmount += item.price * item.quantity;
     }
-
+   
 }

@@ -54,40 +54,100 @@
 
 
 <script>
-  function updateCartCount() {
-    const cartItemCount = document.getElementById('cartItemCount');
-    const storedCart = localStorage.getItem('cart');
-    let cart = storedCart ? JSON.parse(storedCart) : [];
-    const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
-    cartItemCount.textContent = totalCount;
-  }
+ 
 
   function calculateTotalAmount() {
     return cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   }
+  function removeCartItem(index) {
+        const row = document.getElementById(`cartItemRow_${index}`);
+        row.remove();
 
+        cart.splice(index, 1); // Remove the item from the cart array
+
+        localStorage.setItem('cart', JSON.stringify(cart)); // Update the cart in localStorage
+
+        updateCartCount();
+        updateTotalAmount();
+    }
   document.addEventListener('DOMContentLoaded', function () {
-    cart = JSON.parse(localStorage.getItem('cart')) || []; 
+    const storedCart = localStorage.getItem('cart');
+    cart = storedCart ? JSON.parse(storedCart) : [];
+    // cart = JSON.parse(localStorage.getItem('cart')) || []; 
     const cartItemsList = document.getElementById("cartItemsList");
     const totalAmountElement = document.getElementById("totalAmount");
 
     updateCartCount();
 
-    cart.forEach((item) => {
-      const row = createCartItemRow(item); // Create row using a helper function
+    cart.forEach((item, index) => {
+      const row = createCartItemRow(item, index); // Create row using a helper function
       cartItemsList.appendChild(row);
     });
 
     totalAmountElement.textContent = `$${calculateTotalAmount()}`;
-    function createCartItemRow(item) {
+
+    function createCartItemRow(item, index) {
       const row = document.createElement("tr");
+      row.id = `cartItemRow_${index}`;
       row.innerHTML = `
     <td>${item.productName}</td>
-    <td>${item.quantity}</td>
+    <td><button class="quantity-plus">+</button>
+    <span>${item.quantity}</span>
+    <button class="quantity-minus">-</button>
+      <i class='bx bxs-trash-alt' id="TrashIcon" style="position:relative; top:1vh; left:0.5vw"></i>
+    </td>
     <td>${item.price * item.quantity}</td>
     `;
+    const deleteIcon = row.querySelector("#TrashIcon");
+    deleteIcon.addEventListener('click',()=>{
+     
+     removeCartItem(index);
+    
+    })
+    const minusButton = row.querySelector(".quantity-minus");
+        minusButton.addEventListener("click", () => {
+          if (item.quantity > 1) {
+            item.quantity--;
+            updateCart();
+          }
+        });
+
+        // Event listener for the plus button
+        const plusButton = row.querySelector(".quantity-plus");
+        plusButton.addEventListener("click", () => {
+          item.quantity++;
+          updateCart();
+        });
       return row;
     }
+
+    function updateCart() {
+        // Clear the current cart items
+        cartItemsList.innerHTML = "";
+
+        // Calculate and display each cart item
+        let totalAmount = 0;
+        cart.forEach((item) => {
+          const row = createCartItemRow(item);
+          cartItemsList.appendChild(row);
+          totalAmount += item.price * item.quantity;
+        });
+
+        // Update total amount
+        totalAmountElement.textContent = `$${totalAmount}`;
+
+        updateCartCount();
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+      }
+
+      function updateCartCount() {
+    let totalCount = 0;
+    cart.forEach((item) => {
+      totalCount += item.quantity;
+    });
+    cartItemCount.textContent = totalCount;
+  }
 
     const checkoutButton = document.createElement("button");
     checkoutButton.textContent = "Continue Shopping";
@@ -110,7 +170,10 @@
     Place_Order.style.marginRight = "3vh";
 
     cartButtons.appendChild(Place_Order);
+    updateCart();
   });
+ 
+  
 </script>
 
 </html>
