@@ -82,52 +82,52 @@ const Products={
         // quantity : 1,
         price: 204
     },
-    product3 :{
+    "product3" :{
         productName : "Adjustable Dumbell",
         // quantity : 1,
         price: 324
     },
-    product4 :{
+    "product4" :{
         productName : "Weight Bench",
         // "quantity" : 1,
         price: 43
     },
-    product5 :{
+    "product5" :{
         productName : "Resistance Band",
         // "quantity" : 1,
         price:3
     },
-    product6 :{
+    "product6" :{
         productName : "Weighted Vest",
         // "quantity" : 1,
         price: 46
     },
-product7 :{
+"product7" :{
         productName : "Yoga Mat",
         // "quantity" : 1,
         price: 10
     },
-    product8 :{
+    "product8" :{
         productName : "4KG Kettlebells for Weightlifting",
         // "quantity" : 1,
         price: 6
     },
-    product9 :{
+    "product9" :{
         productName : "5KG Dumbell",
         // quantity : 1,
         price: 20
     },
-    product10 :{
+    "product10" :{
         productName : "AB Roller",
         // "quantity" : 1,
         price: 4
     },
-    product11 :{
+    "product11" :{
         productName : "Hand Gripper",
         // "quantity" : 1,
         price:3
     },
-    product12 :{
+    "product12" :{
         productName : "Wrist Wrap/Strap",
         // "quantity" : 1,
         price: 12

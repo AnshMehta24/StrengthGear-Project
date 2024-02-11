@@ -112,7 +112,7 @@ main{
     position: relative;
    font-size: 15px;
    font-weight: 400;
-   right: 9.7vw;
+   right: 12.7vw;
 }
 
 .priceofProduct span{
@@ -140,14 +140,56 @@ main{
 
 .nameofProduct h1{
     position: relative;
-    left: 1.7vw;
+    left: 1.5vw;
 }
-
-
+#RB_h1{
+    left: 4.2vw;
+}
+#price_h1 {
+    position: relative;
+    left: -3.4vw;
+}
+#WB{
+    left: 0vw;
+    /* position: relative; */
+}
 #treadmill_h1{
     left: -6.4vw;
 }
+#AD{
+    left: 13vw;
+}
+#WV_h1{
+    left: 0.5vw;
+}
+#WV{
+    position: relative;
+    right: 2vw;
+}
+#AB_h1{
+    left: -5.6vw;
+}
+#YM{
+    left: -7vw;
+}
+#KB{
+    left: 3vw;
+}
+#KB_h1, #AB{
+    position: relative;
+    right: 3vw;
+}
+#HG_h1{
+    left: 0.6vw;
+}
 
+#HG{
+    position: relative;
+    right: 1.7vw;
+}
+#WR{
+    left: -2.5vw;
+}
 .main_buttons{
     margin-top: 6vh ;
 }
