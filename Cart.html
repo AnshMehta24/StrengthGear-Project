@@ -17,7 +17,7 @@
   <div class="nav">
     <img src="/Assets/web_icon.png-PhotoRoom.png" alt="" class="logo">
     <h1>Strength<span>Gear</span></h1>
-    <nav class="navbar">
+    <nav class="navbar" id="home">
       <a href="#Home">Contact</a>
       <a href="#about"><i class='bx bxs-cart'><span id="cartItemCount">0</span></i></a>
       <a href="#about"><i class='bx bx-user'></i></a>
@@ -45,9 +45,50 @@
       </table>
       <div id="cartButtons"></div>
     </div>
-
+    <div>
+    <section class="footer">
+      <hr class="hr">
+      <footer>
+          <div class="upperFooter">
+              <div class="Foot01">
+                  <h3 class="footerHeading">StrengthGear</h3>
+                  <p>Stay connected with StrengthGear by following us on social media. We offer fitness tips, workout
+                      inspiration, and exclusive discounts.</p>
+                  <div class="lasticons">
+                      <i class='bx bxl-instagram'></i>&nbsp;
+                      <i class='bx bxl-facebook-circle'></i>&nbsp;
+                      <i class='bx bxl-twitter'></i>&nbsp;
+                  </div>
+              </div>
+              <div>
+                  <h3 class="footerHeading">Quick Links</h3>
+                  <ul class="List">
+                      <li><a href="gym_equipments.html">Gym Equipments</a></li>
+                      <li><a href="gym.html">Home</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h3 class="footerHeading">Info</h3>
+                  <ul class="List">
+                      <li>About Us</li>
+                      <li>Shopping Policy</li>
+                      <li>Blog</li>
+                  </ul>
+              </div>
+              <div>
+                  <h3 class="footerHeading">Need Help?</h3>
+                  <ul class="List">
+                      <li>Contact Us</li>
+                      <li>My Account</li>
+                      <li>Cart</li>
+                  </ul>
+              </div>
+          </div>
+      </footer>
+  </section>
+</div>
   </main>
-
+  
 
 
 </body>
@@ -102,7 +143,7 @@
     deleteIcon.addEventListener('click',()=>{
      
      removeCartItem(index);
-    
+     updateTotalAmount();
     })
     const minusButton = row.querySelector(".quantity-minus");
         minusButton.addEventListener("click", () => {

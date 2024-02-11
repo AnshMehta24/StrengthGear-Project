@@ -322,6 +322,10 @@ footer{
     font-size: 20px;
     margin-bottom: 30px;
 }
+.upperFooter .List li a{
+    text-decoration: none;
+    color: black;
+}
 
 .lasticons {
     font-size: 30px;

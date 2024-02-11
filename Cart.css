@@ -16,7 +16,7 @@ header {
     background-color: black;
     color: white;
     bottom: 8px;
-    width: 99.7vw;
+    width: 98.9vw;
     right: 8px;
     height: 3vh;
     text-align: center;
@@ -130,3 +130,64 @@ header {
     /* align-items: end; */
     justify-content: end;
   }
+  hr {
+    position: relative;
+    /* bottom: 8vh; */
+    top: 40vh;
+    width: 70vw;
+}
+
+.upperFooter {
+    top: 50vh;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    /* bottom: vh; */
+    gap: 10vw;
+}
+
+.upperFooter p {
+    width: 15vw;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Foot01 {
+    position: relative;
+    right: 30px;
+}
+
+.upperFooter h3 {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.upperFooter {
+    position: relative;
+    justify-content: center;
+}
+
+.upperFooter .List {
+    list-style-type: none;
+}
+
+.upperFooter .List li {
+    /* opacity: var(--opacity); */
+    position: relative;
+    right: 2.5vw;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.upperFooter .List li a{
+    text-decoration: none;
+    color: black;
+}
+.lasticons {
+    font-size: 30px;
+    /* width: 20vw; */
+    /* margin-right: 10px; */
+}
+
+
+
+
