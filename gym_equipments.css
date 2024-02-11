@@ -373,13 +373,17 @@ header {
 }
 
 .upperFooter .List li {
+    text-decoration: none;
     /* opacity: var(--opacity); */
     position: relative;
     right: 2.5vw;
     font-size: 20px;
     margin-bottom: 30px;
 }
-
+.upperFooter .List li a{
+    text-decoration: none;
+    color: black
+}
 .lasticons {
     font-size: 30px;
     /* width: 20vw; */
