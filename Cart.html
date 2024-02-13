@@ -108,7 +108,7 @@
         cart.splice(index, 1); // Remove the item from the cart array
 
         localStorage.setItem('cart', JSON.stringify(cart)); // Update the cart in localStorage
-
+        window.location.reload()
         updateCartCount();
         updateTotalAmount();
     }
