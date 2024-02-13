@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
 body {
     /* background: linear-gradient(rgb(0,0,7),rgb(0,0,7),rgb(0,0,7),url('pexels-william-choquette-1954524\ \(1\).jpg')); */
     background-image: url('/Assets/pexels-william-choquette-1954524\ \(1\).jpg');
@@ -209,62 +214,62 @@ body::before {
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     left: 170px;
-    top: 20px;
+    top: 30px;
 }
 
 .price02 h1 {
     position: relative;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    left: 170px;
-    top: 20px;
+    left: 193px;
+    top: 30px;
 }
 
 .price03 h1 {
     position: relative;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    left: 230px;
-    top: 20px;
+    left: 280px;
+    top: 30px;
 }
 
 .price04 h1 {
     position: relative;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    left: 253px;
-    top: 20px;
+    left: 292px;
+    top: 30px;
 }
 
 .price01 a {
     position: relative;
     color: black;
-    left: 140px;
-    top: 26px;
+    left: 173px;
+    top: 40px;
 
 }
 
 .price02 a {
     position: relative;
     color: black;
-    left: 140px;
-    top: 26px;
+    left: 210px;
+    top: 40px;
 
 }
 
 .price03 a {
     position: relative;
     color: black;
-    left: 200px;
-    top: 26px;
+    left: 262px;
+    top: 40px;
 
 }
 
 .price04 a {
     position: relative;
     color: black;
-    left: 235px;
-    top: 26px;
+    left: 295px;
+    top: 40px;
 
 }
 
@@ -340,7 +345,7 @@ body::before {
     position: relative;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    left: 170px;
+    left: 185px;
     top: 50px;
 }
 
@@ -348,7 +353,7 @@ body::before {
     position: relative;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    left: 170px;
+    left: 175px;
     top: 50px;
 }
 
@@ -380,7 +385,7 @@ body::before {
     position: relative;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    left: 185px;
+    left: 215px;
     top: 28vw;
 }
 
@@ -472,7 +477,7 @@ body::before {
 .hdn_price06,
 .hdn_price07,
 .hdn_price08 {
-    width: 188px;
+    width:220px;
 }
 
 .hdn_price01 h1 span,

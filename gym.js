@@ -1,6 +1,8 @@
+// import LocomotiveScroll from 'locomotive-scroll';
 let productContainer = document.querySelector('.products_grid')
 let hiddenContainer = document.querySelector('.hidden_products');
 let ProductSection = document.querySelector('.products');
+
 let viewAllBtn = document.querySelector('.viewAll a');
 let hiddenPriceContainer = document.querySelector('.hidden_Price')
 let overlay = document.createElement('div');
@@ -16,7 +18,9 @@ document.addEventListener('DOMContentLoaded', function(){
             // adjustOverlayHeight();
             overlay.style.display='block'
             overlay.style.height = '740vh'
+
         } );
+      
 });
 
 function toggleProductContainer(){

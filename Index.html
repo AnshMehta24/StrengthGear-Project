@@ -33,19 +33,19 @@
         <a href="#Product"><button class="btn01">Shop Now</button></a>
     </div>
     <section class="products" id="Product">
-        <div class="container">
+        <div class="container"  data-scroll-container>
             <h1>Our Products</h1>
         </div>
 
-        <div class="products_grid">
-            <a href="Exercise_Cycle.html"><img src="/Assets/Exercise Cycle 01.png" alt=""></a>
-            <a href="Treadmill.html"><img src="/Assets/Treadmill01.png" alt=""></a>
-            <a href="Adjustable_Weights.html"><img src="/Assets/Adjustable Weights01.png" alt=""></a>
-            <a href="WeightBench.html"><img src="/Assets/Weight Bench 01.png" alt=""></a>
+        <div class="products_grid" data-scroll-section>
+            <a href="Exercise_Cycle.html" data-scroll><img src="/Assets/Exercise Cycle 01.png" alt=""></a>
+            <a href="Treadmill.html" data-scroll><img src="/Assets/Treadmill01.png" alt=""></a>
+            <a href="Adjustable_Weights.html" data-scroll><img src="/Assets/Adjustable Weights01.png" alt=""></a>
+            <a href="WeightBench.html" data-scroll><img src="/Assets/Weight Bench 01.png" alt=""></a>
         </div>
 
-        <div class="Price">
-            <div class="price01">
+        <div class="Price" data-scroll-section>
+            <div class="price01" data-scroll-speed="1" data-scroll>
                 <a href="Exercise_Cycle.html">Exercise Cycle</a>
                 <h1>146$ <span>170$</span></h1>
             </div>
@@ -264,5 +264,7 @@
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
 <script src="gym.js"></script>
+
+
 
 </html>
