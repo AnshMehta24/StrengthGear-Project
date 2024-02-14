@@ -36,7 +36,6 @@ body::before {
     height: 630vh;
     background: rgba(0, 0, 0, 0.8);
     z-index: 1;
-    /* Adjust the alpha value to control darkness */
 }
 
 .overlay {
@@ -894,6 +893,449 @@ hr {
     /* margin-right: 10px; */
 }
 
+/* 
+@media screen and (max-width:1536px){
+.nav h1 {
+    position: relative;
+    right: 32vw;
+    top: -3px;
+}
+.navbar {
+    grid-template-columns: 121px 60px 50px;
+    grid-template-rows: 32px;
+    /* top: -13px; */
+    /* justify-content: end;
+    align-items: center; */
+    /* right: 16px; */
+    /* left: -10px; */
 
+/* }
 
+}
+@media screen and (max-width:1499px)
+ {
+    .nav h1 {
+        position: relative;
+        right: 31vw;
+        top: -3px;
+    }
+    .navbar {
+        grid-template-columns: 121px 60px 50px;
+        grid-template-rows: 32px;
+        /* top: -13px; */
+        /* justify-content: end;
+        align-items: center; */
+        /* right: 16px; */
+        /* left: 0px; */
 
+    /* }
+    
+    .navbar a {
+        background: transparent;
+        display: inline-block;
+        font-size: 25px;
+        color: black;
+        text-decoration: none;
+        font-weight: 500; */ 
+        /* margin-left: 35px; */
+    /* }
+ }    */
+/* 
+ @media screen and (min-width:1360px)
+{
+    .nav{
+        width: 77%;
+    }
+    .nav h1 {
+        right: 31vw;
+      }   
+      body::before {
+        /* content: "";
+        position: absolute;
+        top: 0;
+        left: 0; */
+        /* width: 110%;
+        height: 630vh;
+       }
+
+       .navbar {
+        grid-template-columns: 121px 60px 50px;
+        grid-template-rows: 32px; */
+        /* top: -13px; */
+        /* justify-content: end;
+        align-items: center; */
+        /* right: 16px; */
+        /* left: 0px; */
+
+    /* } */
+       
+/* }
+@media screen and (max-width:1360px){
+    .nav{
+        width: 67%;
+    }
+}
+@media screen and (min-width:1000px){
+    .nav{
+        width: 95vw;
+    } */
+/* }  */
+@media screen and (max-width:376px){
+    header {
+        bottom: 8px;
+        width: 99.7vw;
+        }
+        body {
+            /* background: linear-gradient(rgb(0,0,7),rgb(0,0,7),rgb(0,0,7),url('pexels-william-choquette-1954524\ \(1\).jpg')); */
+           
+            background-size: 70.5% 100%;
+        
+            /* background-blend-mode : darken; */
+        }
+        body::before {
+            /* content: "";
+            position: absolute;
+            top: 0;
+            left: 0; */
+            width: 100%;
+            height: 1230vh;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+        }
+        .nav{
+            width: 94.9%;
+            top: 3vh;
+            height: 7.5vh;
+        }
+        .logo {
+            right: 17px;
+            width: 30vw;
+            height: 6vh;
+            top: -5px;
+        }
+        .nav h1 {
+            font-size: 1rem;
+            right: 49px;
+            top: 0px;
+        }
+        .navbar {
+            grid-template-columns: 100px 45px 60px;
+    left: 1px;
+}
+        
+        .navbar a {
+            font-size: 20px;
+           }
+
+           .home {
+            width: 80vw;
+            top: 70px;
+            left: 14px;
+        }
+        
+        .h_01 {
+            font-size: 50px;
+           }
+        
+        .h_02 {
+            bottom: 30px;
+            font-size: 40px;
+        }
+        
+        .about {
+            bottom: 40px;
+            font-size: 20px;
+        }
+        
+        .btn01 {
+            bottom: 40px;
+            font-size: 40px;
+            }
+
+            .products {
+                width: 104.5%;
+                left: -7px;
+                top: 125px;
+                height: 130vh;
+            }
+            
+            .container h1 {
+                font-size: 40px;
+                }
+            
+            .products_grid {
+                top: 30px;
+               
+                grid-template-columns: 21vw 21vw;
+                column-gap: 100px;
+                /* aspect-ratio: 1/4; */
+            }
+            
+            .products_grid a img {
+                width: 45vw;
+                height: 32vh;
+                top: 20px;
+                left: -50px;
+               }
+        
+               
+
+               .price01 h1 {
+                font-size: 15px;
+    left: 65px;
+    top: -35px;
+            }
+            
+            .price02 h1 {
+                font-size: 15px;
+                left: -90px;
+                top: -35px;
+            }
+            
+            .price03 h1 {
+                font-size: 15px;
+                left: 36px;
+                top: 280px;
+            }
+            
+            .price04 h1 {
+                font-size: 15px;
+                left: -150px;
+                top: 280px;
+            }
+            
+            .price01 a {
+                left: 50px;
+                top: -40px;
+            
+            }
+            
+            .price02 a {
+                left: -90px;
+                top: -40px;
+            
+            }
+            
+            .price03 a {
+                left: 8px;
+                top: 280px;
+            
+            }
+            
+            .price04 a {
+                left: -150px;
+                top: 280px;
+            
+            }
+            
+            .price01 h1 span,
+            .price02 h1 span,
+            .price03 h1 span,
+            .price04 h1 span {
+                font-size: 13px;
+                text-decoration: line-through;
+            }
+            
+            
+            .Price {
+                display: flex;
+                column-gap: 200px;
+                flex-wrap: wrap;
+                width: 114vw;
+            }
+            .viewAll a {
+                border: 2px solid black;
+                top: 302px;
+                left: 33%;
+                padding: 8px;
+                }
+                
+                
+                .hidden_products.show-hidden_products {
+                    top: 45vh;
+                    display: grid;
+                    /* grid-template-columns: repeat(auto-fit, minmax(21vw, 1fr)); */
+                    grid-template-columns: 21vw 21vw ;
+                    justify-content: center;
+                    column-gap: 100px;
+                  
+                }
+                
+                .hidden_products a img {
+                    width: 45vw;
+                    height: 32vh;
+                    top: 20px;
+                    left: -50px;
+                   }
+                   #iphone375{
+                    display: none;
+                   }
+                
+             
+                
+                .hidden_Price.show-hidden_Price {
+                    display: grid;
+                    column-gap: 100px;
+                    grid-template-columns: 21vw 21vw;
+                }
+                
+                .hdn_price01 h1 {
+                    font-size: 15px;
+                    left: 68px;
+                    top: 225px;
+                }
+                
+                .hdn_price02 h1 {
+                    font-size: 15px;
+                    left: 68px;
+                    top: 225px;
+                }
+                
+                .hdn_price03 h1,.hdn_price04 h1, .hdn_price05 h1, .hdn_price06 h1, .hdn_price07 h1, .hdn_price08 h1 {
+                    
+                    display: none;
+                }
+            
+                
+                
+                
+                
+                .hdn_price01 a {
+                    position: relative;
+                    color: black;
+                    left: 55px;
+                    top: 225px;
+                
+                }
+                
+                .hdn_price02 a {
+                    position: relative;
+                    color: black;
+                    left: 55px;
+                    top: 225px;
+                
+                }
+                
+                .hdn_price03 a , .hdn_price04 a, .hdn_price05 a, .hdn_price06 a, .hdn_price07 a, .hdn_price08 a{
+                    display: none;
+                
+                }
+                
+                .firstpara {
+                    top: 15px;
+                    text-align: center;
+                    font-size: 18px;
+                }
+                .question {
+                    top: 40vh;
+                    height: 310vh;
+                    left: -6px;
+                    width: 98.8vw;
+                    z-index: 1;
+                }
+                .box01 {
+                    margin: 85px;
+                   width: 88vw;
+                    bottom: 35px;
+                    left: -10vw;
+                }
+                
+                .box02 {
+                    position: relative;
+                    bottom: 180px;
+                    left: -10vw;
+                }
+                
+          
+                
+                .box01 p,
+                .box02 p {
+                    width: 64vw;
+                    font-size: 22px;
+                    font-weight: normal;
+                }
+                .message {
+                    top: 70vh;
+                   }
+                
+                .paragraph img {
+                    width: 65vw;
+                    height: 35vh;
+                    top: -155px;
+                    /* left: 15px; */
+                    right: 55px;
+                   }
+                
+                
+                 
+                   .paragraph p {
+                       width: 96vw;
+                       font-size: 22px;
+                       left: 10px;
+                       top: -75px;
+                   }
+                
+                   .customer_Review {
+                    position: relative;
+                    background-color: white;
+                    top: 70vh;
+                    height: 195vh;
+                    left: -6px;
+                    width: 98.8vw;
+                    z-index: 1;
+                }
+                
+                .headingofReview h1 {
+                    right: 46px;
+                    top: 20px;
+                   }
+                
+                .review_01 p,
+                .review_02 p,
+                .review_03 p {
+                    font-size: 25px;
+                    left: -30px;
+                    width: 75vw;
+                  }
+                
+                /* .review_02 p {
+                    width: 23vw;
+                }
+                 */
+                .review_01 img,
+                .review_02 img,
+                .review_03 img {
+                    width: 11vw;
+                    height: 10vh;
+                   }
+                
+                .review_01 h2,
+                .review_02 h2,
+                .review_03 h2 {
+                    width: 48vw;
+                    font-size: 25px;
+                    bottom: 78px;
+                    left: 54px;
+                }
+/*                 
+                .review_03 h2,
+                .review_02 h2 {
+                    width: 12vw;
+                } */
+                
+                .Reviews {
+                    width: 102vw;
+    flex-wrap: wrap;
+                   }
+                
+                .ratings {
+                    position: relative;
+                    text-align: center;
+                    left: 9vw;
+                    width: 80vw;
+                }
+                
+               
+    }
+                
+                            
