@@ -270,32 +270,34 @@ header {
     top: 8vh;
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    left: 6vw;
+    left: 9vw;
     width: 12vw;
 }
 
+
+
 .gym_equipmentPrice04 h1{
-    left: 5vw;
+    left: 10vw;
     width: 12vw;
 }
 .gym_equipmentPrice05 h1{
-    left: 8vw;
+    left: 11vw;
 }
 .gym_equipmentPrice06 h1{
-    left: 7.5vw;
+    left: 10vw;
 }
 .gym_equipmentPrice08 h1{
-    left: 9vw;
+    left: 11vw;
     width: 7vw;
 }
 .gym_equipmentPrice09 h1{
-    left: 8vw;
+    left: 10vw;
 }
 .gym_equipmentPrice11 h1{
-    left: 7.5vw;
+    left: 10vw;
 }
 .gym_equipmentPrice12 h1{
-    left: 8vw;
+    left: 11vw;
     width: 10vw;
 }
 
