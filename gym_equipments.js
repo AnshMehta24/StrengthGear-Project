@@ -3,16 +3,15 @@ Shery.textAnimate(".main h1" /* Element to target.*/, {
   style: 1,
   y: 10,
   delay: 0.1,
-  duration: 2,
+  duration: 1.5,
   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
   multiplier: 0.1,
 });
 
 Shery.mouseFollower({
-  //Parameters are optional.
   skew: true,
   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-  duration: 1,
+  duration: 0.5,
 });
 
 let minPriceInput = document.getElementById('min_price')

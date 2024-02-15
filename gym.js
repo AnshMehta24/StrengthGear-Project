@@ -54,12 +54,11 @@ function toggleHiddenPriceContainer(){
     // let isAllProductsVisible = productContainer.children.length === hiddenContainer.children.length;
     // viewAllBtn.style.display = isAllProductsVisible ? 'none' : 'block';
     
-// }
+// 
 Shery.mouseFollower({
-    //Parameters are optional.
     skew: true,
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-    duration: 1,
+    duration: 0.5,
   });
 
   Shery.textAnimate(".nav h1 span" /* Element to target.*/, {

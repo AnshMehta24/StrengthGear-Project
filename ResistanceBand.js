@@ -1,3 +1,10 @@
+Shery.mouseFollower({
+    skew: true,
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 0.5,
+  });
+
+
 let input = document.querySelector('#input_field')
 let cart = []
 let totalAmount = 0;
