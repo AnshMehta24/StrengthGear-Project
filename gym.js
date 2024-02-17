@@ -9,6 +9,7 @@ let overlay = document.createElement('div');
 overlay.classList.add('overlay');
 document.body.appendChild(overlay);
 
+
 document.addEventListener('DOMContentLoaded', function(){    
     viewAllBtn.addEventListener('click', function(e){
             e.preventDefault()
